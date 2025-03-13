@@ -18,7 +18,7 @@ function signin() {
 
         if (user) {
             console.log("signin sucessfully")
-            window.location.href = "/welcome.html"
+            window.location.href = "/welcome/welcome.html"
         } else {
             error.textContent = "invalid credential";
         }

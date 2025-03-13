@@ -25,5 +25,5 @@ document.getElementById("signupForm").addEventListener("submit", function (event
 
     // Redirect to Sign In page after successful signup
     alert("Signup successful! Please sign in.");
-    window.location.href = "/signin.html"
+    window.location.href = "/signin/signin.html"
 });
