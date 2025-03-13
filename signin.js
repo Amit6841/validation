@@ -18,7 +18,7 @@ function signin() {
 
         if (user) {
             console.log("signin sucessfully")
-            window.location.href = "/welcome/welcome.html"
+            window.location.href = "/welcome.html"
         } else {
             error.textContent = "invalid credential";
         }
@@ -27,16 +27,3 @@ function signin() {
 
 document.addEventListener('DOMContentLoaded', signin);
 
-function hide() {
-    const togglePassword = document.getElementById("togglepassword");
-    const passwordField = document.getElementById("signin-password");
-
-    togglePassword.addEventListener("click", function () {
-        // Toggle the type of the password field
-        const type = passwordField.type === "password" ? "text" : "password";
-        passwordField.type = type;
-
-        // Toggle the text of the button (Show/Hide)
-        this.textContent = this.textContent === "Show" ? "Hide" : "Show";
-    });
-}
